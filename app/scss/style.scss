@@ -22,7 +22,6 @@
   right: 80px;
   bottom: 116px;
   color: #FFF;
-  text-transform: uppercase;
 }
 .slider-item__info-suptitle{
   margin-bottom: 5px;
@@ -77,13 +76,13 @@
   padding-top: 6px;
   &__number{
     font-weight: 800;
-    text-transform: uppercase;
     font-size: 24px;
     line-height: 34px;
   }
   &__name{
     font-weight: 300;
     line-height: 19px;
+    text-transform: capitalize;
   }
 }
 .header__aside{
@@ -102,7 +101,6 @@
   font-weight: 800;
   line-height: 156px;
   /* 78% */
-  text-transform: uppercase;
   opacity: 0.0654;
   max-width: 467px;
   position: absolute;
@@ -111,7 +109,7 @@
   z-index: 4;
 }
 .menu{
-  padding-top: 120px;
+  padding-top: 40px;
   a{
     color: #fff;
     span{
@@ -122,6 +120,7 @@
       letter-spacing: 3px;
       padding-top: 6px;
       margin-bottom: 20px;
+      text-transform: capitalize;
     }
   }
 }
@@ -153,6 +152,7 @@
   letter-spacing: 1.05px;
   position: relative;
   padding-left: 19px;
+  text-transform: capitalize;
   &::before{
     content: '';
     position: absolute;
@@ -162,6 +162,35 @@
     left: 0;
     top: 0;
   }
+}
+.header__map{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+.header__arrows{
+  position: absolute;
+  left: 210px;
+  bottom: 40px;
+  z-index: 3;
+}
+.line-animation{
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: animdash 3s infinite 6s;
+}
+
+
+
+@keyframes animdash {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+.surf{
+  padding: 160px 0 210px;
 }
 
 
